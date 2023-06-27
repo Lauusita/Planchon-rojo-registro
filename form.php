@@ -2,11 +2,9 @@
     $mes = $_POST['mes'];
     $dia = $_POST['dia'];
     $semana = $_POST['semana'];
-    $plata = $_POST['plata'];
+    $plata = $_POST['plata'] ;
 
-    echo $mes;
-    
-
+echo $plata;
 $connect =mysqli_connect('localhost','root' , '', 'planchon_rojo');
 
 $insertar = "INSERT INTO registrodinero (mes, dia, semana, plata) values('$mes', '$dia', '$semana', '$plata')";
@@ -22,3 +20,6 @@ else{
 
 mysqli_close($connect);
 ?>
+
+<div class="row" style="mx-2">
+<a href="index.html" >Volver</a></div>
