@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Base de datos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <form action="form.php" method="post">
+    <!-- Inicio forms -->
+    <div class="container mt-5" >
+        <div class="row">
+            <div class="col">
+                <p>Mes</p>
+                <select name="mes" id=""  class="form-select" aria-label="Default select example" required>
+                    <option value=""></option>
+                    <option value="enero">enero</option>
+                    <option value="febrero">febrero</option>
+                    <option value="marzo">marzo</option>
+                    <option value="abril">abril</option>
+                    <option value="mayo">mayo</option>
+                    <option value="junio">junio</option>
+                    <option value="julio">julio</option>
+                    <option value="agosto">agosto</option>
+                    <option value="septiempre">septiemre</option>
+                    <option value="octubre">octubre</option>
+                    <option value="noviembre">noviembre</option>
+                    <option value="diciembre">diciembre</option>
+
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <p>Día</p>
+                <br>
+                <input type="text" placeholder="día" name="dia" class="form-control" maxlength="31" minlength="1" required>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <!-- <button>Semana</button> -->
+                <p>Semana</p>
+                <select name="semana" id=""  class="form-select" aria-label="Default select example" required>
+                    <option value=""></option>
+                    <option value="lunes">lunes</option>
+                    <option value="martes">martes</option>
+                    <option value="miércoles">miércoles</option>
+                    <option value="jueves">jueves</option>
+                    <option value="viernes">viernes</option>
+                    <option value="sábado">sábado</option>
+                    <option value="domingo">domingo</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="col-auto">
+            <p>Cantidad restante</p>
+              <div class="input-group-text" style="background-color: rgb(188, 187, 243); margin-left: 4px;"> $  
+              <input type="text" class="form-control" name="plata" id="autoSizingInputGroup" required></div> 
+        </div>
+        <br>
+        <div class="col-12">
+            <button class="btn btn-primary ml-3" type="submit" name="enviar">Enviar datos</button>
+            <button class="btn btn-primary" type="reset">Limpiar datos</button>
+        </div>
+    </div></form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
